@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Blog & Haberler | Dijital Hukuk</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="header-container nav nav-container">
+        <a class="identity" href="index.html"
+          ><span class="brand-mark">D</span
+          ><span
+            ><span class="brand-name" data-i18n="brand">Dijital Hukuk</span
+            ><span class="credential" data-i18n="credential"
+              >Av. Ahmet Turan Delice | Türk Hukuku Danışmanı (§ 206 BRAO)</span
+            ></span
+          ></a
+        ><button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+        <div class="nav-links">
+          <a href="index.html" data-i18n="navHome">Ana Sayfa</a
+          ><a href="uzmanlik.html">Uzmanlık Alanları</a
+          ><a href="hizmetler.html" data-i18n="navServices">Hizmetler</a
+          ><a class="active" href="blog.html">Blog / Haberler</a
+          ><a class="btn" href="randevu.html" data-i18n="navBooking"
+            >Randevu Al</a
+          ><span class="language-switcher"
+            ><button data-lang="tr">TR</button><button data-lang="de">DE</button
+            ><button data-lang="en">EN</button></span
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="section">
+        <div class="container">
+          <p class="eyebrow">Bilgi merkezi</p>
+          <h1 class="title">Haberler & Hukuki Makaleler</h1>
+          <div class="blog-toolbar">
+            <input
+              data-blog-search
+              type="search"
+              placeholder="Makale ara"
+            /><button class="blog-filter active" data-category="all">
+              Tümü</button
+            ><button class="blog-filter" data-category="miras">Miras</button
+            ><button class="blog-filter" data-category="tapu">Tapu</button
+            ><button class="blog-filter" data-category="tenfiz">
+              Tanıma-Tenfiz</button
+            ><button class="blog-filter" data-category="konsolosluk">
+              Konsolosluk
+            </button>
+          </div>
+          <div class="grid grid-2" data-blog-grid>
+            <article class="card article-card" data-category="tenfiz">
+              <p class="eyebrow">Tanıma-Tenfiz</p>
+              <h3>Almanya Boşanma Kararlarının Türkiye'de Tescili</h3>
+              <p>
+                Kararın kesinleşmesi, apostil ve nüfus kaydı bakımından temel
+                kontrol noktaları.
+              </p>
+              <div class="article-meta">08 Eylül 2026 · 6 dk okuma</div>
+              <a class="btn btn-light" href="makale-detay.html?id=1">Devamını Oku</a>
+            </article>
+            <article class="card article-card" data-category="miras">
+              <p class="eyebrow">Miras</p>
+              <h3>Yurt Dışındaki Mirasçı İçin Veraset ve İntikal</h3>
+              <p>
+                Türkiye'deki tereke, belge tedariki ve tapu intikalinde pratik
+                süreç haritası.
+              </p>
+              <div class="article-meta">02 Eylül 2026 · 7 dk okuma</div>
+              <a class="btn btn-light" href="makale-detay.html?id=2">Devamını Oku</a>
+            </article>
+            <article class="card article-card" data-category="tapu">
+              <p class="eyebrow">Tapu</p>
+              <h3>Taşınmaz Satışında Vekâletname Kontrol Listesi</h3>
+              <p>
+                Özel yetki, fotoğraf, tapu bilgileri ve satış öncesi dikkat
+                edilmesi gerekenler.
+              </p>
+              <div class="article-meta">26 Ağustos 2026 · 5 dk okuma</div>
+              <a class="btn btn-light" href="makale-detay.html?id=3">Devamını Oku</a>
+            </article>
+            <article class="card article-card" data-category="konsolosluk">
+              <p class="eyebrow">Konsolosluk</p>
+              <h3>Konsolosluk Noterlik Randevusuna Hazırlık</h3>
+              <p>
+                Vekâletname işlemi öncesinde kimlik, belge ve tercüme kontrolü.
+              </p>
+              <div class="article-meta">18 Ağustos 2026 · 4 dk okuma</div>
+              <a class="btn btn-light" href="makale-detay.html?id=4">Devamını Oku</a>
+            </article>
+          </div>
+          <div class="newsletter-box" style="margin-top: 38px">
+            <div>
+              <h3>Türkiye'deki hukuki değişikliklerden haberdar olun</h3>
+              <p>
+                Yalnızca mesleki bilgilendirme; dilediğiniz zaman
+                ayrılabilirsiniz.
+              </p>
+            </div>
+            <input type="email" placeholder="E-posta adresiniz" /><button
+              class="btn btn-gold"
+            >
+              Kaydol
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Müvekkil Portalı | Dijital Hukuk</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body class="portal-page">
+    <header class="site-header">
+      <nav class="header-container nav nav-container">
+        <a class="identity" href="index.html"
+          ><span class="brand-mark">D</span
+          ><span
+            ><span class="brand-name" data-i18n="brand">Dijital Hukuk</span
+            ><span class="credential" data-i18n="credential"
+              >Av. Ahmet Turan Delice | Türk Hukuku Danışmanı (§ 206 BRAO)</span
+            ></span
+          ></a
+        ><a class="btn btn-light" href="index.html" data-i18n="navHome"
+          >Ana Sayfa</a
+        ><span class="language-switcher"
+          ><button data-lang="tr">TR</button><button data-lang="de">DE</button
+          ><button data-lang="en">EN</button></span
+        >
+      </nav>
+    </header>
+    <main class="container portal-wrap">
+      <section class="portal-intro">
+        <p class="eyebrow" style="color: #c5a880">DSGVO</p>
+        <h1 data-i18n="portalTitle">Güvenli Müvekkil Portalı</h1>
+        <p data-i18n="portalLead">
+          Dosya ve belge akışınızı tek ekrandan takip edin.
+        </p>
+        <p>
+          Tarayıcı tabanlı demo: dosyalar cihazınızdan sunucuya gönderilmez.
+          Canlı kullanımda güvenli kimlik doğrulama, sunucu tarafı şifreleme ve
+          erişim kayıtları uygulanmalıdır.
+        </p>
+      </section>
+      <section class="card">
+        <div class="tabs" role="tablist">
+          <button class="tab active" data-tab="login" data-i18n="login">
+            Giriş Yap</button
+          ><button class="tab" data-tab="register" data-i18n="register">
+            Kayıt Ol
+          </button>
+        </div>
+        <div id="login" class="tab-pane active">
+          <h2 data-i18n="login">Giriş Yap</h2>
+          <div class="form-grid">
+            <label>E-posta<input type="email" /></label
+            ><label>Şifre<input type="password" /></label>
+          </div>
+          <button
+            class="btn"
+            style="margin-top: 15px"
+            type="button"
+            data-i18n="login"
+          >
+            Giriş Yap
+          </button>
+        </div>
+        <div id="register" class="tab-pane">
+          <h2 data-i18n="register">Kayıt Ol</h2>
+          <div class="form-grid">
+            <label>Ad soyad<input /></label
+            ><label>E-posta<input type="email" /></label>
+          </div>
+          <button
+            class="btn"
+            style="margin-top: 15px"
+            type="button"
+            data-i18n="register"
+          >
+            Kayıt Ol
+          </button>
+        </div>
+        <hr style="margin: 28px 0; border: 0; border-top: 1px solid #e2e8f0" />
+        <h3>Evrak Kasası</h3>
+        <input
+          id="documents"
+          type="file"
+          accept=".pdf,.jpg,.jpeg,.png"
+          multiple
+          hidden
+        />
+        <div class="dropzone" role="button" tabindex="0">
+          <i
+            class="fa-solid fa-cloud-arrow-up"
+            style="font-size: 2rem; color: #9e8055"
+          ></i>
+          <p data-i18n="upload">Belgeleri sürükleyip bırakın veya seçin</p>
+          <small>PDF, JPG, PNG</small>
+        </div>
+        <ul class="file-list" aria-live="polite"></ul>
+        <div class="countdown">
+          <i class="fa-solid fa-clock"></i>
+          <span data-i18n="destruction"
+            >Yüklenen belgeler 14 gün sonra sistemden otomatik olarak kalıcı
+            silinir.</span
+          >
+          <strong data-destruction-count>13 gün 23 saat</strong>
+        </div>
+        <button
+          class="btn btn-gold"
+          style="margin-top: 18px"
+          type="button"
+          data-meeting
+          data-i18n="join"
+        >
+          <i class="fa-solid fa-video"></i> Görüşme Odasına Katıl
+        </button>
+        <p class="payment-message" data-meeting-message aria-live="polite"></p>
+      </section>
+    </main>
+  </body>
+</html>
