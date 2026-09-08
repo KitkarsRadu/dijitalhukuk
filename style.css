@@ -42,8 +42,56 @@
 .article-image { width:100%; height:180px; margin:-25px -25px 20px; width:calc(100% + 50px); object-fit:cover; border-radius:17px 17px 0 0; }
 /* Ana sayfadaki eski ikincil karşılama bloğu, tek parça manşet vitriniyle birleşti. */
 .news-slider + .hero { display:none; }
-@media(max-width:950px){.nav-links{background:#181b20!important;}.nav-dropdown{width:100%;}.dropdown-menu{position:static; display:none; margin-top:4px; opacity:1; visibility:visible; transform:none;}.nav-dropdown:hover .dropdown-menu,.nav-dropdown:focus-within .dropdown-menu{display:grid;}.headline{grid-template-columns:1fr;}.headline>div{padding:34px 0;}.headline img{height:260px;}.headline-tabs span{display:none;}}
-
+@media(max-width:950px){
+  .nav-links {
+    background: #181b20 !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
+  .nav-links a {
+    text-align: left !important;
+    width: 100% !important;
+  }
+  .nav-dropdown {
+    width: 100% !important;
+    text-align: left !important;
+  }
+  .nav-dropdown > button {
+    width: 100% !important;
+    text-align: left !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 10px 0 !important;
+  }
+  .dropdown-menu {
+    position: static !important;
+    display: none;
+    margin: 4px 0 8px 0 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    left: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    text-align: left !important;
+    background: rgba(255, 255, 255, 0.04) !important;
+    border: 1px solid rgba(245, 158, 11, 0.2) !important;
+    padding: 6px 12px !important;
+  }
+  .dropdown-menu a {
+    text-align: left !important;
+    padding: 8px 6px !important;
+  }
+  .nav-dropdown:hover .dropdown-menu,
+  .nav-dropdown:focus-within .dropdown-menu {
+    display: grid !important;
+  }
+  .headline { grid-template-columns: 1fr; }
+  .headline > div { padding: 34px 0; }
+  .headline img { height: 260px; }
+  .headline-tabs span { display: none; }
+}
 /* German/Turkish micro-accent system and interactive editorial components */
 .site-header {
   border-bottom: 2px solid transparent;
@@ -1078,11 +1126,44 @@ select {
 
 /* Final navigation palette overrides legacy header rules above. */
 .site-header{background:#181b20;border-bottom:2px solid #d97706}.brand-name,.credential,.nav-links{color:#fff}.brand-mark{border-color:#f59e0b;color:#fbbf24;background:rgba(245,158,11,.09)}.nav-links{gap:13px;white-space:nowrap;font-size:.78rem}.nav-links a{color:#f4eee9;white-space:nowrap}.nav-links a:hover,.nav-links a.active{color:#fbbf24}.nav-dropdown>button{color:#f4eee9}.language-switcher{border-color:#5b524d;background:#292020}.language-switcher button{color:#e4ddd6}.language-switcher button.active{color:#181b20;background:#fbbf24}.menu-toggle{color:#fff}.appointment{border-color:#be123c;background:#be123c;color:#fff!important}.news-slider + .hero{display:none}
-@media(max-width:950px){.nav-links{background:#181b20!important}.nav-dropdown{width:100%}.dropdown-menu{position:static;display:none;opacity:1;visibility:visible;transform:none}.nav-dropdown:hover .dropdown-menu,.nav-dropdown:focus-within .dropdown-menu{display:grid}}
+
 
 /* Geniş ekran grid düzeni ve kaymasız mobil katman */
 html,body{max-width:100%;overflow-x:hidden}.container{width:92%;max-width:1440px}.grid{gap:26px}.headline-slider{position:relative;padding:38px 0 28px}.headline-content{position:relative}.headline{min-height:470px}.headline>div{padding-right:70px}.headline img{height:470px}.headline-dots{display:flex;justify-content:center;gap:10px;margin-top:20px}.headline-dots button{width:9px;height:9px;padding:0;border:0;border-radius:50%;background:#64748b;transition:.25s}.headline-dots button.active{width:26px;border-radius:8px;background:linear-gradient(90deg,#f59e0b,#e11d48)}.headline-arrow{position:absolute;z-index:2;top:47%;width:46px;height:46px;border:1px solid rgba(255,255,255,.38);border-radius:50%;background:rgba(15,23,42,.48);backdrop-filter:blur(8px);color:#fff;opacity:0;transition:.25s}.headline-slider:hover .headline-arrow{opacity:1}.headline-arrow:hover{background:rgba(217,119,6,.78)}.headline-arrow.prev{left:18px}.headline-arrow.next{right:18px}
-@media(max-width:950px){.container{width:92%;max-width:1440px}.nav{min-height:70px}.nav-links{top:70px;gap:3px;padding:14px 4%;max-height:calc(100vh - 70px);overflow-y:auto}.nav-links a,.nav-dropdown>button{width:100%;padding:11px 5px}.language-switcher{margin:6px 0}.headline{min-height:0}.headline>div{padding:30px 8px}.headline img{height:260px}.headline-arrow{opacity:1;top:52%;width:38px;height:38px}.headline-arrow.prev{left:8px}.headline-arrow.next{right:8px}}
+@media(max-width:950px){
+  .container { width: 92%; max-width: 1440px; }
+  .nav { min-height: 70px; }
+  .nav-links {
+    top: 70px;
+    gap: 4px;
+    padding: 16px 20px;
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
+  .nav-links a,
+  .nav-dropdown > button {
+    width: 100% !important;
+    padding: 10px 0 !important;
+    text-align: left !important;
+  }
+  .appointment {
+    width: 100% !important;
+    text-align: center !important;
+    margin: 8px 0 !important;
+  }
+  .language-switcher {
+    margin: 8px 0;
+    align-self: flex-start !important;
+  }
+  .headline { min-height: 0; }
+  .headline > div { padding: 30px 8px; }
+  .headline img { height: 260px; }
+  .headline-arrow { opacity: 1; top: 52%; width: 38px; height: 38px; }
+  .headline-arrow.prev { left: 8px; }
+  .headline-arrow.next { right: 8px; }
+}
 @media(max-width:600px){.container{width:92%}.grid,.grid-2,.grid-3,.grid-4,.form-grid,.hero-grid{grid-template-columns:1fr!important}.card{padding:20px}.headline h1{font-size:2rem}.headline p{font-size:.94rem}.headline img{height:210px}.headline-dots{margin-top:14px}.headline-arrow{top:56%;}.article-image{margin:-20px -20px 18px;width:calc(100% + 40px)}}
 
 /* Compact editorial type scale and two-line identity hierarchy. */
