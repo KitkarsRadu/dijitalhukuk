@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Randevu | Dijital Hukuk</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="header-container nav nav-container">
+        <a class="identity" href="index.html"
+          ><span class="brand-mark">D</span
+          ><span
+            ><span class="brand-name" data-i18n="brand">Dijital Hukuk</span
+            ><span class="credential" data-i18n="credential"
+              >Av. Ahmet Turan Delice | Türk Hukuku Danışmanı (§ 206 BRAO)</span
+            ></span
+          ></a
+        ><button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+        <div class="nav-links">
+          <a href="index.html" data-i18n="navHome">Ana Sayfa</a
+          ><a href="hakkimizda.html" data-i18n="navAbout">Hakkımızda</a
+          ><a href="hizmetler.html" data-i18n="navServices">Hizmetler</a
+          ><a href="rehber.html" data-i18n="navGuide">Rehber</a
+          ><a href="portal.html" data-i18n="navPortal">Müvekkil Portalı</a
+          ><a class="btn active" href="randevu.html" data-i18n="navBooking"
+            >Randevu Al</a
+          ><span class="language-switcher"
+            ><button data-lang="tr">TR</button><button data-lang="de">DE</button
+            ><button data-lang="en">EN</button></span
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="section section-muted">
+        <div class="container">
+          <p class="eyebrow" data-i18n="packagesEyebrow">Hizmet seçenekleri</p>
+          <h1 class="title" data-i18n="packagesTitle">
+            İhtiyacınıza uygun, açık ücretli hukuki destek.
+          </h1>
+          <div class="grid grid-3" style="margin-top: 30px">
+            <article class="card price-card">
+              <h3 data-i18n="writtenTitle">
+                24 Saat İçinde Yazılı Hukuki Değerlendirme Raporu
+              </h3>
+              <div class="price" data-i18n="from49">49 €</div>
+              <p data-i18n="writtenDesc">
+                Evrak ve olay analizi, risk raporu; 24 saatte e-posta veya
+                portal ile teslim.
+              </p>
+            </article>
+            <article class="card price-card featured">
+              <h3 data-i18n="liveTitle">45 Dakika Canlı Online Danışmanlık</h3>
+              <div class="price" data-i18n="from79">79 €</div>
+              <p data-i18n="liveDesc">
+                Birebir video görüşme, belge incelemesi ve anlık soru-cevap.
+              </p>
+            </article>
+            <article class="card price-card">
+              <h3 data-i18n="litigationTitle">Türkiye’de Dava Takibi</h3>
+              <div class="price" data-i18n="quote">Teklif Usulü</div>
+              <p data-i18n="litigationDesc">
+                Miras, tapu iptali, tahliye veya tanıma-tenfiz için Türkiye’de
+                tam yetkili dava vekilliği. Ön görüşme ve dosya incelemesi
+                sonrası özel teklif.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <p class="eyebrow">Güvenli rezervasyon</p>
+          <h2 class="title" data-i18n="bookingTitle">Randevu ve ödeme akışı</h2>
+          <p class="lead" data-i18n="bookingLead">
+            Paketi, uygun saati ve iletişim bilgilerinizi belirleyin.
+          </p>
+          <form id="booking-form" class="booking-layout" novalidate>
+            <section class="card">
+              <h3>1. Hizmet seçimi</h3>
+              <div class="package-options">
+                <label class="package-option"
+                  ><input type="radio" name="package" required /><span
+                    ><b data-i18n="writtenTitle"
+                      >24 Saat İçinde Yazılı Hukuki Değerlendirme Raporu</b
+                    ><small data-i18n="from49">49 €</small></span
+                  ></label
+                ><label class="package-option"
+                  ><input type="radio" name="package" /><span
+                    ><b data-i18n="liveTitle"
+                      >45 Dakika Canlı Online Danışmanlık</b
+                    ><small data-i18n="from79">79 €</small></span
+                  ></label
+                ><label class="package-option"
+                  ><input type="radio" name="package" /><span
+                    ><b data-i18n="litigationTitle">Türkiye’de Dava Takibi</b
+                    ><small data-i18n="quote">Teklif Usulü</small></span
+                  ></label
+                >
+              </div>
+              <h3 style="margin-top: 25px" data-i18n="chooseTime">
+                Uygun saati seçin
+              </h3>
+              <div class="slot-grid">
+                <button class="slot" type="button">09:00</button
+                ><button class="slot" type="button">10:30</button
+                ><button class="slot" type="button">12:00</button
+                ><button class="slot" type="button">14:00</button
+                ><button class="slot" type="button">15:30</button
+                ><button class="slot" type="button">17:00</button>
+              </div>
+            </section>
+            <section class="card">
+              <h3>2. İletişim ve demo ödeme</h3>
+              <div class="form-grid">
+                <label>Ad soyad<input required autocomplete="name" /></label
+                ><label
+                  >E-posta<input
+                    type="email"
+                    required
+                    autocomplete="email" /></label
+                ><label class="full"
+                  >Kart üzerindeki ad<input
+                    required
+                    autocomplete="cc-name" /></label
+                ><label class="full"
+                  >Kart numarası<input
+                    required
+                    inputmode="numeric"
+                    minlength="12"
+                    placeholder="4242 4242 4242 4242"
+                    autocomplete="cc-number" /></label
+                ><label
+                  >Son kullanma<input
+                    required
+                    placeholder="AA/YY"
+                    autocomplete="cc-exp" /></label
+                ><label
+                  >CVC<input
+                    required
+                    inputmode="numeric"
+                    minlength="3"
+                    autocomplete="cc-csc"
+                /></label>
+              </div>
+              <label class="check"
+                ><input type="checkbox" required /><span data-i18n="waiver"
+                  >Görüşmenin belirlenen saatte başlamasını talep ediyorum;
+                  hizmet ifa edildiğinde yasal 14 günlük cayma hakkımı
+                  kaybedeceğimi kabul ediyorum (§ 356 Abs. 4 BGB).</span
+                ></label
+              ><button class="btn btn-gold" type="submit">
+                <i class="fa-brands fa-stripe"></i>
+                <span data-i18n="pay">Ödemeyi ve randevuyu onayla</span>
+              </button>
+              <p class="payment-message" aria-live="polite"></p>
+              <p style="font-size: 0.75rem; color: #64748b">
+                Bu ekran Cal.com/Stripe API bağlantısı yapılana kadar çalışan
+                bir ödeme ve rezervasyon simülasyonudur; kart verisi
+                kaydedilmez.
+              </p>
+            </section>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-bottom" style="margin-top: 0">
+        <span>© 2026 Digital Law</span
+        ><a href="yasal.html">Impressum & DSGVO</a>
+      </div>
+    </footer>
+  </body>
+</html>
