@@ -36,8 +36,8 @@
           ><a class="btn active" href="randevu.html" data-i18n="navBooking"
             >Randevu Al</a
           ><span class="language-switcher"
-            ><button data-lang="tr">TR</button><button data-lang="de">DE</button
-            ><button data-lang="en">EN</button></span
+            ><button class="flag flag-tr" data-lang="tr" aria-label="Türkçe">🇹🇷</button><button class="flag flag-de" data-lang="de" aria-label="Deutsch">🇩🇪</button
+            ><button class="flag flag-en" data-lang="en" aria-label="English">🇬🇧</button></span
           >
         </div>
       </nav>
@@ -124,12 +124,14 @@
             <section class="card">
               <h3>2. İletişim ve demo ödeme</h3>
               <div class="form-grid">
-                <label>Ad soyad<input required autocomplete="name" /></label
+                <label><span data-i18n="firstName">Ad</span><input required autocomplete="given-name" /></label
+                ><label><span data-i18n="lastName">Soyad</span><input required autocomplete="family-name" /></label
                 ><label
-                  >E-posta<input
+                  ><span data-i18n="email">E-posta</span><input
                     type="email"
                     required
                     autocomplete="email" /></label
+                ><label><span data-i18n="phone">Telefon</span><input type="tel" required autocomplete="tel" /></label
                 ><label class="full"
                   >Kart üzerindeki ad<input
                     required
@@ -154,6 +156,8 @@
                     autocomplete="cc-csc"
                 /></label>
               </div>
+              <label class="check"><input type="checkbox" data-create-account /><span data-i18n="createAccount">Bu bilgilerle üye hesabı oluştur</span></label>
+              <label class="account-password" hidden><span data-i18n="password">Şifre belirleyin</span><input type="password" minlength="8" autocomplete="new-password" /></label>
               <label class="check"
                 ><input type="checkbox" required /><span data-i18n="waiver"
                   >Görüşmenin belirlenen saatte başlamasını talep ediyorum;
